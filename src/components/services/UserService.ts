@@ -5,7 +5,7 @@ export class UserService{
     private static serverUrl:string = `https://jsonplaceholder.typicode.com`;
 
     public static getAllUsers():Promise<{data : IUser[]}>{
-        let dataUrl:string = `${this.serverUrl}/userscv`;
+        let dataUrl:string = `${this.serverUrl}/users`;
         return axios.get(dataUrl);
     }
 }
